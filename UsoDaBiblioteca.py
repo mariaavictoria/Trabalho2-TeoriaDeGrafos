@@ -383,6 +383,11 @@ class Grafo:
             info.write('Informações das Componentes Conexas:\n')
             info.write(self.ComponentesConexas())	
 
-teste=Grafo("Lista")
-teste.ImportarTxt("rede_colaboracao.txt")
-teste.DjikstraHeap(2722)
+#Como utilizar a biblioteca:
+#1. Crie um objeto da classe Grafo (Escolha o tipo de representação do grafo: 'Matriz' ou 'Lista') (Ex:'Lista')
+Objeto_Teste=Grafo('Lista')
+#2. Importe um grafo de um arquivo texto (Ex: 'grafo_1.txt')
+Objeto_Teste.ImportarTxt('grafo_1.txt')
+#3. Utilize as novas funções disponíveis na classe Grafo
+Objeto_Teste.Djikstra(1) #Caso queira executar o algoritmo de Dijkstra com um vetor no grafo (Ex: vértice raiz 1)
+Objeto_Teste.DjikstraHeap(1) #Caso queira executar o algoritmo de Dijkstra com Heap no grafo (Ex: vértice raiz 1)
